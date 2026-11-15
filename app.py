@@ -25,7 +25,7 @@ st.info(
     "or replace a qualified healthcare professional."
 )
 
-DATA_FILE = Path(__file__).parent / "data" / "healthcare_guide.txt"
+DATA_FILE = Path(__file__).parent / "healthcare_guide.txt"
 ALERTS_FILE = Path(__file__).parent / "alerts.json"
 
 def load_alerts():

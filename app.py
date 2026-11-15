@@ -25,7 +25,7 @@ st.info(
     "or replace a qualified healthcare professional."
 )
 
-DATA_FILE = Path(__file__).parent / "healthcare_guide.txt"
+DATA_FILE = Path(__file__).parent / "data" / "healthcare_guide.txt"
 ALERTS_FILE = Path(__file__).parent / "alerts.json"
 
 def load_alerts():
@@ -224,7 +224,7 @@ if saved_alerts:
         st.write(f"**Health concern:** {alert['concern']}")
         st.write(f"**Priority:** {alert['priority']}")
         st.write(f"**Status:** {alert.get('status', 'Pending')}")
-        st.caption(f"Created at: {alert['created_at']}")
+        st.caption(f"Created at: {alert.get('created_at', 'Not available')}")
 
         if alert.get("status", "Pending") == "Pending":
             if st.button("Mark as Completed", key=f"complete_{index}"):

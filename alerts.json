@@ -1,18 +1,3 @@
 {
-    "alerts": [
-        {
-            "patient": "test001",
-            "concern": "high fever and headache for two days",
-            "priority": "Urgent review",
-            "created_at": "2026-11-15 17:27:47",
-            "status": "Pending"
-        },
-        {
-            "patient": "test001",
-            "concern": "high fever and headache for two days",
-            "priority": "Routine follow-up",
-            "created_at": "2026-11-15 17:28:06",
-            "status": "Completed"
-        }
-    ]
+    "alerts": []
 }
